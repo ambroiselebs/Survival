@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class PlayerScript_Main : MonoBehaviour
 {
-    public float speed = 5f;
-    public float jumpForce = 5f;
-    public float sprintTime = 5f;
-    
+    public float speed                  = 5f;
+    public float jumpForce              = 5f;
     public Rigidbody rb;
-    
-    public bool jump = false;
+    public bool jump                    = false;
 
-    void handleMovement()
+    void _handleMovement()
     {
         
         // Basic movement
@@ -53,6 +50,6 @@ public class PlayerScript_Main : MonoBehaviour
     
     void Update()
     {
-        handleMovement();
+        _handleMovement();
     }
 }

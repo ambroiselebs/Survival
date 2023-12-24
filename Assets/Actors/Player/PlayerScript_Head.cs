@@ -10,9 +10,9 @@ public class PlayerScript_Head : MonoBehaviour
     void Update()
     {
         float rotateX = Input.GetAxis("Mouse X");
-        playerBody.transform.RotateAround(playerBody.transform.position, -Vector3.up, rotateX*sensitivity);
+        playerBody.transform.RotateAround(playerBody.transform.position, Vector3.up, rotateX*sensitivity);
         
         float rotateY = Input.GetAxis("Mouse Y");
-        transform.RotateAround(transform.position, transform.right, rotateY*sensitivity);
+        transform.RotateAround(transform.position, -transform.right, rotateY*sensitivity);
     }
 }
